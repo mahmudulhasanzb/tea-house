@@ -28,29 +28,74 @@
   </style>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-[999] bg-white/90 backdrop-blur-md shadow-sm border-b border-[#d9f99d]">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 text-[#15803d] font-bold text-2xl">
+        <i class="fa-solid fa-mug-hot text-[#65a30d]"></i>
+        <span>Tea <span class="text-[#65a30d]">House</span></span>
+      </a>
+
+      <!-- Nav Links -->
+      <ul class="hidden md:flex items-center gap-8 font-semibold text-[#57534e]">
+        <li><a href="#"
+            class="hover:text-[#15803d] transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-[2px] after:bg-[#65a30d] after:transition-all after:duration-300 hover:after:w-full">Home</a>
+        </li>
+        <li><a href="#reviews"
+            class="hover:text-[#15803d] transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-[2px] after:bg-[#65a30d] after:transition-all after:duration-300 hover:after:w-full">Reviews</a>
+        </li>
+        <li><a href="#featured-products"
+            class="hover:text-[#15803d] transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-[2px] after:bg-[#65a30d] after:transition-all after:duration-300 hover:after:w-full">Products</a>
+        </li>
+        <li><a href="#news"
+            class="hover:text-[#15803d] transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-[2px] after:bg-[#65a30d] after:transition-all after:duration-300 hover:after:w-full">News</a>
+        </li>
+        <li><a href="#contact"
+            class="hover:text-[#15803d] transition-colors duration-200 relative after:absolute after:bottom-[-3px] after:left-0 after:w-0 after:h-[2px] after:bg-[#65a30d] after:transition-all after:duration-300 hover:after:w-full">Contact</a>
+        </li>
+      </ul>
+
+      <!-- CTA Button -->
+      <a href="#"
+        class="hidden md:inline-flex items-center gap-2 py-2 px-5 rounded-full text-white font-semibold bg-linear-to-r from-[#84cc16] to-[#15803d] cursor-pointer hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300">
+        Order Now <i class="fa-solid fa-leaf text-sm"></i>
+      </a>
+
+      <!-- Mobile Hamburger -->
+      <button class="md:hidden text-[#15803d] text-2xl cursor-pointer focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    </div>
+  </nav>
 
   <!-- Banner section -->
-  <section class="grid grid-cols-1 md:grid-cols-2 container mx-auto">
+  <section
+    class="grid grid-cols-1 md:grid-cols-2 container mx-auto bg-[#fefce8] px-8 py-12 rounded-3xl overflow-hidden">
     <div class="banner-left space-y-[30px]">
       <h2 class="text-[80px] font-bold">It's good <br>
-        tea time at The <br> Tea House</h2>
-      <p class="text-[#777777]">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To
+        tea time at The <br> Tea House <i class="fa-solid fa-leaf text-[#65a30d]"></i></h2>
+      <p class="text-[#57534e]">Tea and Botanical Solutions Supplier Give Optimum <br> Satisfaction To
         Your Taste
         Buds.
       </p>
-      <button class="py-3 px-5 rounded-md text-white font-semibold bg-linear-to-r from-[#ff8938] to-[#ff0000] ">Explore
+      <button
+        class="py-3 px-5 rounded-md text-white font-semibold bg-linear-to-r from-[#84cc16] to-[#15803d] cursor-pointer hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300">Explore
         More <span class="-rotate-45 inline-block"><i class="fa-solid fa-arrow-right-long"></i></span>
       </button>
     </div>
     <div class="banner-right flex justify-end items-end relative">
       <img src="./images/banner.png" alt="">
       <!-- Rating div -->
-      <div class="bg-white p-[25px] rounded-xl shadow-2xl flex justify-center items-center  w-[250px] gap-2 absolute bottom-[15px] left-[220px] py-[25px] px-[15px]
-         ">
+      <div
+        class="bg-white p-4 rounded-xl shadow-2xl flex justify-center items-center w-[200px] gap-2 absolute bottom-[15px] left-1/2 -translate-x-1/2 md:left-[180px] md:translate-x-0 py-4 px-4">
         <img src="./images/banner-rating.png" alt="">
         <div>
-          <h2 class="font-bold text-2xl">5.00</h2>
+          <h2 class="font-bold text-2xl text-[#65a30d]">5.00</h2>
           <p>Trust Rating</p>
         </div>
       </div>
@@ -58,34 +103,36 @@
   </section>
 
   <!-- Featured section -->
-  <section class="container mx-auto my-[60px]">
+  <section id="featured-products" class="container mx-auto my-[60px]">
 
     <!-- Featured section header -->
     <div class="text-center max-w-[65%] mx-auto">
-      <h2 class="text-[45px] font-bold mb-[50px]">Our Featured Products</h2>
-      <p class="text-[#777777]">Explore our diverse collection of premium teas, harvested from the world's finest
+      <h2 class="text-[45px] font-bold mb-[50px]">Our Featured Products <i
+          class="fa-solid fa-mug-hot text-[#65a30d]"></i></h2>
+      <p class="text-[#57534e]">Explore our diverse collection of premium teas, harvested from the world's finest
         gardens. Whether you prefer bold flavors or soothing blends, our curated selection promises a delightful
         experience for all. </p>
     </div>
 
     <!-- Featured section products -->
-    <div class="featured-card-parent grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 rounded-md ">
-      <div class="featured-card bg-linear-to-r from-[#f4f4f4] to-[#f4f4f4] p-7 text-center rounded-md">
+    <div class="featured-card-parent grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 rounded-md mt-[50px]">
+      <div
+        class="featured-card bg-linear-to-r from-[#f7fee7] to-[#f7fee7] p-7 text-center rounded-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
         <img class="mx-auto mb-4" src="./images/tea-1.png" alt="">
         <h2 class="font-bold text-xl">Milk Tea</h2>
         <p>Creamy, rich, and perfectly sweetened.</p>
       </div>
-      <div class="featured-card bg-linear-to-r from-[#f4f4f4] to-[#f4f4f4] p-7 text-center rounded-md">
+      <div class="featured-card bg-linear-to-r from-[#f7fee7] to-[#f7fee7] p-7 text-center rounded-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
         <img class="mx-auto mb-4" src="./images/tea-2.png" alt="">
         <h2 class="font-bold text-xl">Black Tea</h2>
         <p>Strong, bold flavor to start your day.</p>
       </div>
-      <div class="featured-card bg-linear-to-r from-[#f4f4f4] to-[#f4f4f4] p-7 text-center rounded-md">
+      <div class="featured-card bg-linear-to-r from-[#f7fee7] to-[#f7fee7] p-7 text-center rounded-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
         <img class="mx-auto mb-4" src="./images/tea-3.png" alt="">
         <h2 class="font-bold text-xl">Lemon Tea</h2>
         <p>Zesty, refreshing, and full of vitamin.</p>
       </div>
-      <div class="featured-card bg-linear-to-r from-[#f4f4f4] to-[#f4f4f4] p-7 text-center rounded-md">
+      <div class="featured-card bg-linear-to-r from-[#f7fee7] to-[#f7fee7] p-7 text-center rounded-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
         <img class="mx-auto mb-4" src="./images/tea-4.png" alt="">
         <h2 class="font-bold text-xl">Green Tea</h2>
         <p>Pure, natural, and distinctively fresh.</p>
@@ -94,9 +141,10 @@
   </section>
 
   <!-- Great Tea section -->
-  <section class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-5 mb-[90px]">
+  <section
+    class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-[90px] bg-[#f5f5f4] p-10 rounded-3xl items-center">
     <div class="great-tea-left grid grid-cols-2 grid-rows-3 gap-[30px]">
-      <div class="bg-linear-to-r from-[#f00000] to-[#ff8938] rounded-md opacity-10"></div>
+      <div class="bg-linear-to-r from-[#bef264] to-[#84cc16] rounded-md opacity-10"></div>
       <div class="row-span-2 flex justify-center items-center bg-[#e6a6231a] rounded-md">
         <img src="./images/fresh-1.png" alt="">
       </div>
@@ -106,79 +154,93 @@
       <div class="bg-linear-to-r from-[#d9d9d9] to-[#ffffff00] rounded-md"></div>
     </div>
 
-    <div class="great-tea-right">
-      <h2 class="text-[45px] font-bold">Great Tea, Freshly <br> Presesnted</h2>
-      <p class="text-[#777777]">Our tea leaves are freshly picked and processed to preserve their natural antioxidants
+    <div class="great-tea-right space-y-5">
+      <h2 class="text-[45px] font-bold">Great Tea, Freshly <br> Presented</h2>
+      <p class="text-[#57534e]">Our tea leaves are freshly picked and processed to preserve their natural antioxidants
         and flavor. We are dedicated to bringing you the purest tea experience, ensuring every sip is a moment of
         tranquility.</p>
-      <h2 class="text-[20px] font-bold">Unique Taste</h2>
-      <p class="text-[#777777]">A unique blend of aromatic spices and herbs, carefully selected to create a unique and
-        flavorful tea experience.</p>
-      <h2 class="text-[20px] font-bold">Premium Quality</h2>
-      <p class="text-[#777777]">Our premium quality tea is carefully selected and processed to ensure the best possible
-        taste and aroma.</p>
+
+      <div class="flex flex-col gap-4">
+        <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#65a30d] hover:shadow-md transition-shadow">
+          <h2 class="text-[20px] font-bold flex items-center gap-2"><i class="fa-solid fa-leaf text-[#65a30d]"></i>
+            Unique Taste</h2>
+          <p class="text-[#57534e] text-sm mt-2">A unique blend of aromatic spices and herbs, carefully selected to
+            create a unique and flavorful tea experience.</p>
+        </div>
+        <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-[#65a30d] hover:shadow-md transition-shadow">
+          <h2 class="text-[20px] font-bold flex items-center gap-2"><i class="fa-solid fa-medal text-[#65a30d]"></i>
+            Premium Quality</h2>
+          <p class="text-[#57534e] text-sm mt-2">Our premium quality tea is carefully selected and processed to ensure
+            the best possible taste and aroma.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- Client section -->
-  <section
-    class="container mx-auto grid grid-cols-1 lg:grid-cols-2  lg:gap-8 gap-20 mb-[90px] bg-linear-to-r from-[#ff8938] to-[#ff0000] p-[70px] rounded-xl">
+  <section id="reviews"
+    class="container mx-auto grid grid-cols-1 lg:grid-cols-2  lg:gap-8 gap-20 mb-[90px] bg-linear-to-r from-[#84cc16] to-[#15803d] p-[70px] rounded-xl">
     <div class="client-left text-white flex items-center">
       <div class="space-y-4">
         <h2 class="font-bold text-[45px]">Meet Our Super <br> Clients</h2>
         <p class="font-[500]">Join our community of satisfied tea enthusiasts who trust us for their daily brew. We are
           committed to excellence, providing top-tier tea products that have earned us the loyalty of customers
           worldwide. </p>
-        <button class="py-3 px-5 rounded-md text-white font-semibold bg-white"> <span
-            class="bg-gradient-to-r from-[#ff8938] to-[#ff0000] bg-clip-text text-transparent">Show All</span>
+        <button
+          class="py-3 px-5 rounded-md text-white font-semibold bg-white cursor-pointer hover:shadow-md hover:ring-2 hover:ring-[#84cc16] active:scale-95 transition-all duration-300">
+          <span class="bg-gradient-to-r from-[#84cc16] to-[#15803d] bg-clip-text text-transparent">Show All</span>
         </button>
       </div>
     </div>
 
-    <!-- review card container -->
-    <div class="client-righ relative  pl-[65px] sm:pl-[365px]">
-      <!-- review card -->
-      <div class=" bg-white rounded-lg p-6 w-[450px] sm:w-[320px] absolute left-[0px] top-[100px] z-50">
-        <div class="absolute -top-[30px] -left-[30px] bg-white p-1 rounded-full ">
-          <img src="./images/client.png" alt="">
+    <!-- review cards container -->
+    <div class="client-right flex flex-col gap-6 w-full max-w-[420px] sm:h-[450px] pt-8 pb-8 mx-auto lg:mx-0 relative">
+
+      <!-- Review Card 1 — Active / Foreground -->
+      <div class="absolute left-0 top-[32%] z-50 w-full bg-white rounded-lg shadow-lg p-6">
+        <div class="absolute -top-5 -left-5 bg-white p-1 rounded-full shadow">
+          <img src="./images/client.png" alt="Sarah Jens">
         </div>
-        <p class="text-[#777777]">The flavors are authentic and refreshing. I start every morning with their green tea
-          blend.</p>
-        <h2 class="font-black text-xl">Sarah Jens</h2>
-        <p class="text-[#777777]">Regular Customer</p>
+        <p class="text-[#57534e] mt-4">The flavors are authentic and refreshing. I start every morning with their green
+          tea blend.</p>
+        <h2 class="font-black text-xl mt-2">Sarah Jens</h2>
+        <p class="text-[#57534e] text-sm">Regular Customer</p>
         <img src="./images/circles.png" alt="" class="absolute right-4 bottom-4">
       </div>
-      <!-- review card -->
-      <div class=" bg-white rounded-lg p-6 w-[450px] sm:w-[320px] relative mb-[50px] opacity-20">
-        <div class="absolute -top-[30px] -left-[30px] bg-white p-1 rounded-full ">
-          <img src="./images/client.png" alt="">
+
+      <!-- Review Card 2 — Background / Faded -->
+      <div class="relative left-[100px] top-[-80px] z-10 bg-white rounded-lg opacity-50 p-6">
+        <div class="absolute -top-5 -left-5 bg-white p-1 rounded-full shadow">
+          <img src="./images/client.png" alt="Mike Eston">
         </div>
-        <p class="text-[#777777]">Absolutely love the packaging and quality. The delivery was fast, the tea is
+        <p class="text-[#57534e] mt-4">Absolutely love the packaging and quality. The delivery was fast, the tea is
           delicious.</p>
-        <h2 class="font-black text-xl">Mike Eston</h2>
-        <p class="text-[#777777]">Regular Customer</p>
+        <h2 class="font-black text-xl mt-2">Mike Eston</h2>
+        <p class="text-[#57534e] text-sm">Regular Customer</p>
       </div>
-      <!-- review card -->
-      <div class=" bg-white rounded-lg p-6 w-[450px] sm:w-[320px] relative opacity-20">
-        <div class="absolute -top-[30px] -left-[30px] bg-white p-1 rounded-full ">
-          <img src="./images/client.png" alt="">
+
+      <!-- Review Card 3 — Background / Faded -->
+      <div class="relative left-[100px] top-[110px] w-full bg-white rounded-lg opacity-50 p-6">
+        <div class="absolute -top-5 -left-5 bg-white p-1 rounded-full shadow">
+          <img src="./images/client.png" alt="Emil Davis">
         </div>
-        <p class="text-[#777777]">A wonderful selection of organic teas. The staff is knowledgeable and the taste is
-          superb.</p>
-        <h2 class="font-black text-xl">Emil Davis</h2>
-        <p class="text-[#777777]">Regular Customer</p>
+        <p class="text-[#57534e] mt-4">A wonderful selection of organic teas. The staff is knowledgeable and the taste
+          is superb.</p>
+        <h2 class="font-black text-xl mt-2">Emil Davis</h2>
+        <p class="text-[#57534e] text-sm">Regular Customer</p>
       </div>
+
     </div>
 
   </section>
 
   <!-- News $ Event section -->
-  <section class="container mx-auto my-[60px]">
+  <section id="news" class="container mx-auto my-[60px]">
 
     <!-- News $ Event section header -->
     <div class="text-center max-w-[65%] mx-auto">
       <h2 class="text-[45px] font-bold mb-[50px]">News & Events</h2>
-      <p class="text-[#777777]">Keep up with our latest announcements, seasonal launches, and tea tasting events. We
+      <p class="text-[#57534e]">Keep up with our latest announcements, seasonal launches, and tea tasting events. We
         love sharing our passion for tea with you through workshops and gatherings that celebrate the art of tea making
         daily. </p>
     </div>
@@ -186,25 +248,28 @@
     <!-- News $ Event section cards -->
     <div class="news-event-card-parent grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 rounded-xl my-10 ">
       <!-- news-event-card-1 -->
-      <div class="news-event-card bg-linear-to-r from-[#f4f4f4] to-[#f4f4f4] p-5 rounded-lg border-2 border-[#D9D9D9]">
+      <div
+        class="news-event-card bg-linear-to-r from-[#f7fee7] to-[#f7fee7] p-5 rounded-lg border-2 border-[#D9D9D9] hover:shadow-lg hover:border-[#84cc16] transition-all duration-300">
         <img class="mx-auto mb-4 w-full" src="./images/news-1.png" alt="">
-        <p class="text-[#777777]">Feb 05, 2027</p>
+        <p class="text-[#57534e]">Feb 05, 2027</p>
         <h2 class="font-bold text-xl">Collecting & points for discount</h2>
         <p>Collect points on every order to unlock exclusive tea rewards.</p>
-        <h4 class="font-bold">Learn More</h4>
+        <h4
+          class="font-bold cursor-pointer hover:text-[#15803d] hover:underline decoration-2 underline-offset-4 transition-all">
+          Learn More <i class="fa-solid fa-arrow-right text-sm ml-1"></i></h4>
       </div>
       <!-- news-event-card-2 -->
-      <div class="news-event-card bg-linear-to-r from-[#f4f4f4] to-[#f4f4f4] p-5 rounded-lg border-2 border-[#D9D9D9]">
+      <div class="news-event-card bg-linear-to-r from-[#f7fee7] to-[#f7fee7] p-5 rounded-lg border-2 border-[#D9D9D9] hover:shadow-lg hover:border-[#84cc16] transition-all duration-300">
         <img class="mx-auto mb-4 w-full" src="./images/news-2.png" alt="">
-        <p class="text-[#777777]">Feb 05, 2027</p>
+        <p class="text-[#57534e]">Feb 05, 2027</p>
         <h2 class="font-bold text-xl">Collecting & points for discount</h2>
         <p>Collect points on every order to unlock exclusive tea rewards.</p>
         <h4 class="font-bold">Learn More</h4>
       </div>
       <!-- news-event-card-3 -->
-      <div class="news-event-card bg-linear-to-r from-[#f4f4f4] to-[#f4f4f4] p-5 rounded-lg border-2 border-[#D9D9D9]">
+      <div class="news-event-card bg-linear-to-r from-[#f7fee7] to-[#f7fee7] p-5 rounded-lg border-2 border-[#D9D9D9] hover:shadow-lg hover:border-[#84cc16] transition-all duration-300">
         <img class="mx-auto mb-4 w-full" src="./images/news-3.png" alt="">
-        <p class="text-[#777777]">Feb 05, 2027</p>
+        <p class="text-[#57534e]">Feb 05, 2027</p>
         <h2 class="font-bold text-xl">Collecting & points for discount</h2>
         <p>Collect points on every order to unlock exclusive tea rewards.</p>
         <h4 class="font-bold">Learn More</h4>
@@ -213,7 +278,7 @@
   </section>
 
   <!-- Footer section -->
-  <footer class="bg-[#ffefe9] p-12">
+  <footer class="bg-[#fefce8] p-12">
     <div class="container mx-auto space-y-12">
 
       <!-- footer-top -->
@@ -224,7 +289,8 @@
         </div>
         <div class="top-right flex items-center gap-10">
           <p class="font-semibold text-[20px]">Ready to get started?</p>
-          <button class="py-3 px-5 rounded-md text-white font-bold bg-linear-to-r from-[#ff8938] to-[#ff0000] ">Get
+          <button
+            class="py-3 px-5 rounded-md text-white font-bold bg-linear-to-r from-[#84cc16] to-[#15803d] cursor-pointer hover:shadow-lg hover:scale-105 active:scale-95 transition-all duration-300">Get
             Started
           </button>
         </div>
@@ -235,43 +301,44 @@
         class="footer-bottom grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-center md:text-left m mx-auto">
         <ul class="space-y-2">
           <li class="font-bold text-xl">Quick Links</li>
-          <li class="text-[#777777]"><a href="#">Home</a></li>
-          <li class="text-[#777777]"><a href="#">About Us</a></li>
-          <li class="text-[#777777]"><a href="#">Insurance</a></li>
-          <li class="text-[#777777]"><a href="#">Privacy Policy</a></li>
+          <li class="text-[#57534e]"><a href="#">Home</a></li>
+          <li class="text-[#57534e]"><a href="#">About Us</a></li>
+          <li class="text-[#57534e]"><a href="#">Insurance</a></li>
+          <li class="text-[#57534e]"><a href="#">Privacy Policy</a></li>
         </ul>
         <ul class="space-y-2">
           <li class="font-bold text-xl">Quick Links</li>
-          <li class="text-[#565656]"><a href="#">Home</a></li>
-          <li class="text-[#565656]"><a href="#">About Us</a></li>
-          <li class="text-[#565656]"><a href="#">Insurance</a></li>
-          <li class="text-[#565656]"><a href="#">Privacy Policy</a></li>
+          <li class="text-[#57534e]"><a href="#">Home</a></li>
+          <li class="text-[#57534e]"><a href="#">About Us</a></li>
+          <li class="text-[#57534e]"><a href="#">Insurance</a></li>
+          <li class="text-[#57534e]"><a href="#">Privacy Policy</a></li>
         </ul>
         <ul class="space-y-2">
           <li class="font-bold text-xl">Quick Links</li>
-          <li class="text-[#565656]"><a href="#">Home</a></li>
-          <li class="text-[#565656]"><a href="#">About Us</a></li>
-          <li class="text-[#565656]"><a href="#">Insurance</a></li>
-          <li class="text-[#565656]"><a href="#">Privacy Policy</a></li>
+          <li class="text-[#57534e]"><a href="#">Home</a></li>
+          <li class="text-[#57534e]"><a href="#">About Us</a></li>
+          <li class="text-[#57534e]"><a href="#">Insurance</a></li>
+          <li class="text-[#57534e]"><a href="#">Privacy Policy</a></li>
         </ul>
-        <div class="space-y-4">
+        <div id="contact" class="space-y-4">
           <h2 class="font-bold text-3xl">Subscribe to our newsletter</h2>
           <div class="flex gap-4">
             <input class="w-full pb-2 border-b-2 outline-none rounded-md" type="text" placeholder="email@address.com">
-            <button class="bg-linear-to-r from-[#ff8938] to-[#ff0000] text-white py-3 px-5 rounded-full"><i
+            <button
+              class="bg-linear-to-r from-[#84cc16] to-[#15803d] text-white py-3 px-5 rounded-full cursor-pointer hover:shadow-lg hover:scale-110 active:scale-95 transition-all duration-300"><i
                 class="fa-solid fa-arrow-right"></i></button>
           </div>
           <div class="flex gap-4">
-            <span><i class="fa-brands fa-facebook"></i></span>
-            <span><i class="fa-brands fa-twitter"></i></span>
-            <span><i class="fa-brands fa-instagram"></i></span>
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-twitter"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
       </div>
 
       <!-- footer-copyright -->
       <div class="footer-copyright">
-        <p class="text-[#777777] text-center">Copyright © 2027 <a href="#">Tea House</a> All rights reserved.</p>
+        <p class="text-[#57534e] text-center">Copyright © 2027 <a href="#">Tea House</a> All rights reserved.</p>
       </div>
     </div>
   </footer>
